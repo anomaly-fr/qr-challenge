@@ -1,14 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
-html{
-    height: 100%;
-}
 .body{
     display: flex;
-    flex-direction: row;
     background-color: hsl(212, 45%, 89%);
+    min-height: 100vh;
     align-items: center;
     justify-content: center;
-    min-height:100%;
 }
 .card{
     display: flex;
@@ -16,8 +12,8 @@ html{
     border-radius: 6%;
     background-color: white;
     align-items: center;
-    height: 90vh;
-    width: 40ch;
+    padding: 0.8rem;
+    max-width: 20rem;
     justify-content: space-around;
 }
 .qr-code{
@@ -41,19 +37,4 @@ html{
 .text{
     text-align: center;
     padding: 3% 10% 3% 10%; 
-}
-@media screen and (max-width: 700px){
-    .card{
-        height: 70vh;
-        width: 40ch;
-    }
-    .title-text{
-        font-size: 1em;
-    }
-    .body-text{
-        font-size: 0.9em;
-    }
-    .text{
-        padding: 1% 7% 1% 7%;
-    }
 }
